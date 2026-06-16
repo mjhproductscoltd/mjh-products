@@ -1,1 +1,119 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #fff9ef;
+    color: #3e2a1f;
+}
+header {
+    background: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+header h1 {
+    font-size: 2.5rem;
+}
+nav {
+    background: #b71c1c;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 12px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.hero {
+    background: linear-gradient(135deg, #8b3c3c, #d32f2f);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+.hero h2 {
+    font-size: 2.2rem;
+}
+.hero button {
+    background: #ff9800;
+    border: none;
+    padding: 14px 35px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+    color: #3e2a1f;
+}
+.hero button:hover {
+    background: #f57c00;
+}
+.featured {
+    padding: 20px;
+    text-align: center;
+}
+.featured h2 {
+    font-size: 2rem;
+    color: #b71c1c;
+}
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+.product-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+.product-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.product-card h3 {
+    margin: 12px 0 5px;
+    color: #d32f2f;
+}
+.product-card p {
+    font-weight: bold;
+    color: #3e2a1f;
+}
+.product-card button {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+.product-card button:hover {
+    background: #b71c1c;
+}
+footer {
+    background: #3e2a1f;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
