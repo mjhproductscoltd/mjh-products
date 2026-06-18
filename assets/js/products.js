@@ -3,7 +3,6 @@ fetch('data/products.json')
   .then(data => {
 
     const container = document.getElementById('productGrid');
-
     if (!container) return;
 
     if (!data.products || data.products.length === 0) {
@@ -26,31 +25,16 @@ fetch('data/products.json')
           src="${product.image}"
           alt="${product.name}"
           onerror="this.src='assets/images/products/placeholder.png';"
-          style="
-            width:100%;
-            height:220px;
-            object-fit:cover;
-            border-radius:10px;
-          "
         >
 
         <h3>${product.name}</h3>
 
-        <p>
-          <strong>Category:</strong>
-          ${product.category}
-        </p>
+        <p><strong>Category:</strong> ${product.category}</p>
 
-        <p>
-          <strong>Price:</strong>
-          ${product.price}
-        </p>
+        <p><strong>Price:</strong> ${product.price}</p>
 
-        <button
-          onclick="orderProduct('${product.id}','${product.name}')"
-          class="order-btn"
-        >
-          Order via WhatsApp
+        <button onclick="openOrder('${product.id}', '${product.name}', '${product.price}')">
+          Order Now
         </button>
       `;
 
@@ -58,55 +42,60 @@ fetch('data/products.json')
 
     });
 
-    console.log(
-      data.products.length +
-      " products loaded successfully."
-    );
+    console.log(data.products.length + " products loaded successfully.");
 
   })
   .catch(error => {
 
     console.error(error);
 
-    const container =
-      document.getElementById('productGrid');
+    const container = document.getElementById('productGrid');
 
     if (container) {
-
       container.innerHTML = `
         <div class="card">
           <h3>Loading Error</h3>
-          <p>
-            Unable to load product data.
-          </p>
+          <p>Unable to load product data.</p>
         </div>
       `;
-
     }
 
   });
 
+/* =========================
+   ORDER SYSTEM (FINAL)
+========================= */
 
-function orderProduct(id, name) {
+function openOrder(id, name, price) {
 
   const phone = "966550171314";
 
   const message = encodeURIComponent(
-`Hello MJH Products,
-
-I am interested in this product.
+`🛒 MJH PRODUCTS ORDER
 
 Product ID: ${id}
 Product Name: ${name}
+Price: ${price}
 
-Please provide details.
+Please confirm availability and delivery details.
 
 Thank you.`
   );
 
-  window.open(
-    `https://wa.me/${phone}?text=${message}`,
-    "_blank"
-  );
+  const whatsappURL = `https://wa.me/${phone}?text=${message}`;
 
+  const paymentInfo = `
+💳 PAYMENT OPTIONS:
+
+bKash: 01XXXXXXXXX  
+Nagad: 01XXXXXXXXX  
+Rocket: 01XXXXXXXXX  
+Bank: MJH Products Co. Ltd
+
+Click OK to continue WhatsApp order.
+`;
+
+  alert(paymentInfo);
+
+  window.open(whatsappURL, "_blank");
 }
