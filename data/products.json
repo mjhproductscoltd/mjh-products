@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": "spices-001",
+      "name": "Turmeric Powder",
+      "category": "Spices",
+      "price": "90 BDT / 100g",
+      "image": "assets/images/products/turmeric.jpg"
+    },
+    {
+      "id": "spices-002",
+      "name": "Black Pepper",
+      "category": "Spices",
+      "price": "120 BDT / 100g",
+      "image": "assets/images/products/black-pepper.jpg"
+    },
+    {
+      "id": "tea-001",
+      "name": "Green Tea",
+      "category": "Tea",
+      "price": "150 BDT / pack",
+      "image": "assets/images/products/green-tea.jpg"
+    }
+  ]
+}
