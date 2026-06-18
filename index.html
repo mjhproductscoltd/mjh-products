@@ -3,54 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MJH Products - মসলা ও আচার</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>MJH Products Company Limited</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- PWA -->
+    <link rel="manifest" href="pwa/manifest.json">
 </head>
+
 <body>
-    <header>
-        <h1>🌶️ MJH Products Co. Ltd</h1>
-        <p>বাংলাদেশের সেরা মসলা ও আচার</p>
-    </header>
 
-    <nav>
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">
+        <img src="assets/images/logo.png" alt="MJH Products">
+    </div>
+
+    <nav class="nav">
         <a href="index.html">হোম</a>
-        <a href="products.html">পণ্য তালিকা</a>
-        <a href="#">যোগাযোগ</a>
+        <a href="about.html">আমাদের সম্পর্কে</a>
+        <a href="products/spices.html">পণ্য</a>
+        <a href="order.html">অর্ডার</a>
+        <a href="contact.html">যোগাযোগ</a>
     </nav>
+</header>
 
-    <div class="hero">
-        <h2>আমাদের স্বাদে দিন নতুন মাত্রা</h2>
-        <button onclick="alert('শীঘ্রই অর্ডার শুরু হবে। কল করুন ০১৭XXXXXXXX')">অর্ডার করুন</button>
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>MJH Products Company Limited</h1>
+        <p>মসলা • চা • তেল • দৈনন্দিন পণ্য</p>
+
+        <a href="products/spices.html" class="btn">পণ্য দেখুন</a>
     </div>
+</section>
 
-    <div class="featured">
-        <h2>🔥 জনপ্রিয় পণ্য</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="https://via.placeholder.com/200x150/ff5722/fff?text=মরিচ" alt="লাল মরিচ">
-                <h3>কাশ্মীরি লাল মরিচ গুঁড়া</h3>
-                <p>দাম: ১২০ টাকা / ১০০ গ্রাম</p>
-                <button>বাস্কেটে যোগ করুন</button>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/200x150/ffc107/333?text=হলুদ" alt="হলুদ">
-                <h3>টাটকা হলুদ গুঁড়া</h3>
-                <p>দাম: ৯০ টাকা / ১০০ গ্রাম</p>
-                <button>বাস্কেটে যোগ করুন</button>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/200x150/4caf50/fff?text=দারুচিনি" alt="দারুচিনি">
-                <h3>সিলেটি দারুচিনি</h3>
-                <p>দাম: ১৫০ টাকা / ৫০ গ্রাম</p>
-                <button>বাস্কেটে যোগ করুন</button>
-            </div>
+<!-- FEATURED -->
+<section class="featured">
+    <h2>🔥 জনপ্রিয় পণ্য</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="assets/images/products/chili.jpg" alt="Chili">
+            <h3>কাশ্মীরি মরিচ</h3>
+            <p>উচ্চ মানের শুকনো মরিচ</p>
         </div>
+
+        <div class="product-card">
+            <img src="assets/images/products/turmeric.jpg" alt="Turmeric">
+            <h3>হলুদ গুঁড়া</h3>
+            <p>খাঁটি প্রাকৃতিক হলুদ</p>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/images/products/tea.jpg" alt="Tea">
+            <h3>গ্রিন টি</h3>
+            <p>স্বাস্থ্যকর প্রিমিয়াম চা</p>
+        </div>
+
     </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 MJH Products Co. Ltd. সব অধিকার সংরক্ষিত।</p>
-    </footer>
+<!-- ABOUT -->
+<section class="about-short">
+    <h2>আমাদের সম্পর্কে</h2>
+    <p>
+        MJH Products Company Limited উচ্চমানের মসলা, চা, তেল এবং দৈনন্দিন পণ্য সরবরাহ করে।
+        আমরা গুণগত মানে বিশ্বাস করি।
+    </p>
+</section>
 
-    <script src="script.js"></script>
+<!-- CTA -->
+<section class="cta">
+    <h2>অর্ডার করতে চান?</h2>
+    <a href="order.html" class="btn">এখনই অর্ডার করুন</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 MJH Products Company Limited</p>
+</footer>
+
+<!-- JS -->
+<script src="assets/js/app.js"></script>
+
 </body>
 </html>
