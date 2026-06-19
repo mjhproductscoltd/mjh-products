@@ -2,235 +2,88 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MJH Checkout</title>
-
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Online Order - MJH Products</title>
 <link rel="stylesheet" href="../assets/css/theme.css">
-
-<style>
-body{
-font-family:Arial,sans-serif;
-padding:20px;
-max-width:700px;
-margin:auto;
-}
-
-input,select{
-width:100%;
-padding:12px;
-margin:8px 0;
-box-sizing:border-box;
-}
-
-button{
-width:100%;
-padding:12px;
-cursor:pointer;
-}
-
-.order-box{
-border:1px solid #ddd;
-padding:15px;
-margin-bottom:20px;
-border-radius:8px;
-}
-</style>
-
 </head>
 <body>
 
-<h1>🛒 Checkout</h1>
+<header class="header">
+<h1>MJH Online Order</h1>
+</header>
 
-<div class="order-box">
+<section class="section">
 
-<h3>Order Summary</h3>
+<h2>Customer Information</h2>
 
-<div id="summary"></div>
+<input id="name" placeholder="Full Name" style="width:100%;padding:10px;margin:5px 0;">
 
-<p>
-<strong>Total Items:</strong>
-<span id="totalItems">0</span>
-</p>
+<input id="phone" placeholder="Phone Number" style="width:100%;padding:10px;margin:5px 0;">
 
-</div>
+<textarea id="address" placeholder="Delivery Address" style="width:100%;padding:10px;height:100px;margin:5px 0;"></textarea>
 
-<input
-type="text"
-id="name"
-placeholder="Your Name"
-required
->
+<h2>Payment Method</h2>
 
-<input
-type="text"
-id="phone"
-placeholder="Phone Number"
-required
->
-
-<input
-type="text"
-id="address"
-placeholder="Delivery Address"
-required
->
-
-<select id="payment">
-
+<select id="payment" style="width:100%;padding:10px;margin:5px 0;">
 <option>bKash</option>
 <option>Nagad</option>
 <option>Rocket</option>
 <option>Bank Transfer</option>
-
 </select>
 
-<button onclick="placeOrder()">
-Place Order
+<h2>Payment Information</h2>
+
+<p><strong>bKash:</strong> 01XXXXXXXXX</p>
+<p><strong>Nagad:</strong> 01XXXXXXXXX</p>
+<p><strong>Rocket:</strong> 01XXXXXXXXX</p>
+<p><strong>Bank:</strong> MJH Products Company Limited</p>
+
+<button onclick="placeOrder()" class="btn primary">
+Place Order via WhatsApp
 </button>
 
+</section>
+
 <script>
-
-let cart =
-JSON.parse(
-localStorage.getItem("mjh_cart")
-) || [];
-
-function renderSummary(){
-
-let html="";
-let total=0;
-
-cart.forEach(item=>{
-
-const qty =
-item.qty || 1;
-
-total += qty;
-
-html += `
-<p>
-${item.name}
-<br>
-Qty: ${qty}
-<br>
-Price: ${item.price}
-</p>
-<hr>
-`;
-
-});
-
-document.getElementById(
-"summary"
-).innerHTML = html;
-
-document.getElementById(
-"totalItems"
-).innerText = total;
-
-}
-
 function placeOrder(){
 
+let cart =
+JSON.parse(localStorage.getItem("mjh_cart")) || [];
+
 if(cart.length===0){
-
 alert("Cart is empty");
-
 return;
-
 }
 
-const name =
-document.getElementById(
-"name"
-).value;
+let name=document.getElementById("name").value;
+let phone=document.getElementById("phone").value;
+let address=document.getElementById("address").value;
+let payment=document.getElementById("payment").value;
 
-const phone =
-document.getElementById(
-"phone"
-).value;
+let items=cart.map(i=>i.name+" - "+i.price).join("\n");
 
-const address =
-document.getElementById(
-"address"
-).value;
-
-const payment =
-document.getElementById(
-"payment"
-).value;
-
-if(
-!name ||
-!phone ||
-!address
-){
-
-alert(
-"Please fill all fields"
-);
-
-return;
-
-}
-
-let items="";
-
-cart.forEach(item=>{
-
-items +=
-item.name +
-" | Qty: " +
-(item.qty || 1) +
-" | Price: " +
-item.price +
-"\n";
-
-});
-
-const message =
+let message=
 `🛒 MJH PRODUCTS ORDER
 
 Name: ${name}
-
 Phone: ${phone}
-
 Address: ${address}
 
 Payment: ${payment}
 
---------------------
-
+Items:
 ${items}
 
---------------------
-
-Total Items: ${
-cart.reduce(
-(a,b)=>
-a+(b.qty||1),
-0
-)
-}
-`;
+Website:
+www.mjh-products.com`;
 
 window.open(
-"https://wa.me/966550171314?text=" +
+"https://wa.me/966550171314?text="+
 encodeURIComponent(message),
 "_blank"
 );
 
-localStorage.removeItem(
-"mjh_cart"
-);
-
-alert(
-"Order Sent Successfully"
-);
-
 }
-
-renderSummary();
 
 </script>
 
