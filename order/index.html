@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - MJH Products</title>
+  <link rel="stylesheet" href="../assets/css/theme.css">
+</head>
+
+<body>
+
+<h2 style="text-align:center;">Checkout</h2>
+
+<div style="max-width:500px;margin:auto;padding:20px;">
+
+  <input id="name" placeholder="Your Name" style="width:100%;padding:10px;margin:5px;">
+  <input id="phone" placeholder="Phone Number" style="width:100%;padding:10px;margin:5px;">
+  <input id="address" placeholder="Address" style="width:100%;padding:10px;margin:5px;">
+
+  <select id="payment" style="width:100%;padding:10px;margin:5px;">
+    <option>bKash</option>
+    <option>Nagad</option>
+    <option>Rocket</option>
+    <option>Bank Transfer</option>
+  </select>
+
+  <button onclick="placeOrder()" style="width:100%;padding:10px;">
+    Place Order
+  </button>
+
+</div>
+
+<script>
+function placeOrder() {
+
+  let cart = JSON.parse(localStorage.getItem("mjh_cart")) || [];
+
+  if (cart.length === 0) {
+    alert("Cart is empty!");
+    return;
+  }
+
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let address = document.getElementById("address").value;
+  let payment = document.getElementById("payment").value;
+
+  let items = cart.map(i => i.name + " - " + i.price).join("\n");
+
+  let message =
+`🛒 MJH ORDER
+
+Name: ${name}
+Phone: ${phone}
+Address: ${address}
+Payment: ${payment}
+
+Items:
+${items}
+`;
+
+  let whatsapp = "https://wa.me/966550171314?text=" + encodeURIComponent(message);
+
+  window.open(whatsapp, "_blank");
+
+  localStorage.removeItem("mjh_cart");
+
+  alert("Order sent!");
+}
+</script>
+
+</body>
+</html>
