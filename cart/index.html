@@ -3,115 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>MJH Products | Shopping Cart</title>
+<title>MJH Cart</title>
 
 <link rel="stylesheet" href="../assets/css/theme.css">
 
 <style>
-
-.cart-container{
-    max-width:1200px;
-    margin:auto;
-    padding:30px;
-}
-
-.cart-header{
-    text-align:center;
-    margin-bottom:30px;
-}
-
-.cart-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:20px;
+body{
+font-family:Arial,sans-serif;
+padding:20px;
 }
 
 .cart-item{
-    background:#fff;
-    border-radius:10px;
-    padding:20px;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
+border:1px solid #ddd;
+padding:15px;
+margin-bottom:10px;
+border-radius:8px;
 }
 
-.cart-item h3{
-    margin-top:0;
+button{
+padding:8px 12px;
+margin:3px;
+cursor:pointer;
 }
 
-.cart-summary{
-    margin-top:40px;
-    text-align:center;
+.qty{
+font-weight:bold;
+padding:0 10px;
 }
 
-.action-btn{
-    padding:12px 20px;
-    border:none;
-    border-radius:6px;
-    cursor:pointer;
-    margin:5px;
+.total{
+font-size:22px;
+font-weight:bold;
+margin-top:20px;
 }
-
-.checkout-btn{
-    background:#16a34a;
-    color:white;
-}
-
-.clear-btn{
-    background:#dc2626;
-    color:white;
-}
-
-.back-btn{
-    background:#0f172a;
-    color:white;
-    text-decoration:none;
-    display:inline-block;
-}
-
-.empty{
-    text-align:center;
-    padding:40px;
-}
-
 </style>
-</head>
 
+</head>
 <body>
 
-<div class="cart-container">
-
-<div class="cart-header">
 <h1>🛒 Shopping Cart</h1>
-<p>MJH Products Co. Ltd</p>
+
+<div id="cartItems"></div>
+
+<div class="total">
+Total Items:
+<span id="totalItems">0</span>
 </div>
 
-<div id="cartItems" class="cart-grid"></div>
+<br>
 
-<div class="cart-summary">
-
-<h2 id="totalItems">Total Items: 0</h2>
-
-<button
-class="action-btn clear-btn"
-onclick="clearCart()">
+<button onclick="clearCart()">
 Clear Cart
 </button>
 
-<a
-href="../order/index.html"
-class="action-btn checkout-btn">
-Proceed To Checkout
+<a href="../order/index.html">
+<button>
+Checkout
+</button>
 </a>
-
-<a
-href="../products/index.html"
-class="action-btn back-btn">
-Continue Shopping
-</a>
-
-</div>
-
-</div>
 
 <script>
 
@@ -120,27 +69,34 @@ JSON.parse(
 localStorage.getItem("mjh_cart")
 ) || [];
 
-const cartItems =
-document.getElementById("cartItems");
+function saveCart(){
 
-const totalItems =
-document.getElementById("totalItems");
+localStorage.setItem(
+"mjh_cart",
+JSON.stringify(cart)
+);
+
+}
 
 function renderCart(){
 
-cartItems.innerHTML = "";
+const container =
+document.getElementById(
+"cartItems"
+);
 
-if(cart.length === 0){
+container.innerHTML="";
 
-cartItems.innerHTML = `
-<div class="empty">
-<h2>Cart is Empty</h2>
-<p>Add products from Products page.</p>
-</div>
-`;
+let totalItems=0;
 
-totalItems.innerHTML =
-"Total Items: 0";
+if(cart.length===0){
+
+container.innerHTML=
+"<h3>Cart Empty</h3>";
+
+document.getElementById(
+"totalItems"
+).innerText="0";
 
 return;
 
@@ -148,38 +104,74 @@ return;
 
 cart.forEach((item,index)=>{
 
-const div =
-document.createElement("div");
+totalItems +=
+(item.qty || 1);
 
-div.className =
-"cart-item";
+container.innerHTML += `
+<div class="cart-item">
 
-div.innerHTML = `
 <h3>${item.name}</h3>
 
 <p>
-<strong>Product ID:</strong>
-${item.id}
-</p>
-
-<p>
-<strong>Price:</strong>
+Price:
 ${item.price}
 </p>
 
-<button
-class="action-btn clear-btn"
-onclick="removeItem(${index})">
+<button onclick="decreaseQty(${index})">
+-
+</button>
+
+<span class="qty">
+${item.qty || 1}
+</span>
+
+<button onclick="increaseQty(${index})">
++
+</button>
+
+<button onclick="removeItem(${index})">
 Remove
 </button>
-`;
 
-cartItems.appendChild(div);
+</div>
+`;
 
 });
 
-totalItems.innerHTML =
-"Total Items: " + cart.length;
+document.getElementById(
+"totalItems"
+).innerText=totalItems;
+
+}
+
+function increaseQty(index){
+
+cart[index].qty =
+(cart[index].qty || 1)+1;
+
+saveCart();
+
+renderCart();
+
+}
+
+function decreaseQty(index){
+
+if(
+(cart[index].qty || 1) > 1
+){
+
+cart[index].qty--;
+
+}else{
+
+cart.splice(index,1);
+
+}
+
+saveCart();
+
+renderCart();
 
 }
 
@@ -187,10 +179,7 @@ function removeItem(index){
 
 cart.splice(index,1);
 
-localStorage.setItem(
-"mjh_cart",
-JSON.stringify(cart)
-);
+saveCart();
 
 renderCart();
 
@@ -198,19 +187,13 @@ renderCart();
 
 function clearCart(){
 
-if(
-confirm("Clear all cart items?")
-){
-
 localStorage.removeItem(
 "mjh_cart"
 );
 
-cart = [];
+cart=[];
 
 renderCart();
-
-}
 
 }
 

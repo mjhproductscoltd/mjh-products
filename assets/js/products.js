@@ -1,160 +1,148 @@
 fetch('data/products.json')
-  .then(response => response.json())
-  .then(data => {
+.then(response => response.json())
+.then(data => {
 
-    const container = document.getElementById('productGrid');
+const container =
+document.getElementById('productGrid');
 
-    if (!container) return;
+if (!container) return;
 
-    if (!data.products || data.products.length === 0) {
+data.products.forEach(product => {
 
-      container.innerHTML = `
-        <div class="card">
-          <h3>No Products Available</h3>
-          <p>Products will be added soon.</p>
-        </div>
-      `;
+const card =
+document.createElement('div');
 
-      return;
-    }
+card.className = 'card';
 
-    data.products.forEach(product => {
+card.innerHTML = `
+<img
+src="${product.image}"
+alt="${product.name}"
+onerror="this.src='assets/images/products/placeholder.png';"
+>
 
-      const card = document.createElement('div');
-      card.className = 'card';
+<h3>${product.name}</h3>
 
-      card.innerHTML = `
-        <img
-          src="${product.image}"
-          alt="${product.name}"
-          onerror="this.src='assets/images/products/placeholder.png';"
-        >
+<p>
+<strong>Category:</strong>
+${product.category}
+</p>
 
-        <h3>${product.name}</h3>
+<p>
+<strong>Price:</strong>
+${product.price}
+</p>
 
-        <p>
-          <strong>Category:</strong>
-          ${product.category}
-        </p>
+<button
+onclick="addToCart(
+'${product.id}',
+'${product.name}',
+'${product.price}'
+)"
+class="cart-btn">
+Add To Cart
+</button>
 
-        <p>
-          <strong>Price:</strong>
-          ${product.price}
-        </p>
+<button
+onclick="openOrder(
+'${product.id}',
+'${product.name}',
+'${product.price}'
+)"
+class="order-btn">
+Buy Now
+</button>
+`;
 
-        <button
-          onclick="addToCart('${product.id}','${product.name}','${product.price}')"
-          class="cart-btn"
-        >
-          Add To Cart
-        </button>
+container.appendChild(card);
 
-        <button
-          onclick="openOrder('${product.id}','${product.name}','${product.price}')"
-          class="order-btn"
-        >
-          Buy Now
-        </button>
-      `;
+});
 
-      container.appendChild(card);
+})
+.catch(error => {
+console.error(error);
+});
 
-    });
+/* CART SYSTEM */
 
-    console.log(
-      data.products.length +
-      " products loaded successfully."
-    );
-
-  })
-  .catch(error => {
-
-    console.error(error);
-
-    const container =
-      document.getElementById('productGrid');
-
-    if (container) {
-
-      container.innerHTML = `
-        <div class="card">
-          <h3>Loading Error</h3>
-          <p>Unable to load product data.</p>
-        </div>
-      `;
-
-    }
-
-  });
-
-/* =========================
-   CART SYSTEM
-========================= */
+function addToCart(
+id,
+name,
+price
+){
 
 let cart =
-  JSON.parse(localStorage.getItem('mjh_cart'))
-  || [];
+JSON.parse(
+localStorage.getItem("mjh_cart")
+) || [];
 
-function addToCart(id, name, price) {
+let existing =
+cart.find(
+item => item.id === id
+);
 
-  cart.push({
-    id,
-    name,
-    price
-  });
+if(existing){
 
-  localStorage.setItem(
-    'mjh_cart',
-    JSON.stringify(cart)
-  );
+existing.qty =
+(existing.qty || 1) + 1;
 
-  alert(name + ' added to cart.');
+}else{
+
+cart.push({
+id:id,
+name:name,
+price:price,
+qty:1
+});
+
 }
 
-/* =========================
-   ORDER SYSTEM
-========================= */
+localStorage.setItem(
+"mjh_cart",
+JSON.stringify(cart)
+);
 
-function openOrder(id, name, price) {
+alert(
+name +
+" added to cart. Qty: " +
+(
+existing
+? existing.qty
+: 1
+)
+);
 
-  const phone = "966550171314";
+}
 
-  const message = encodeURIComponent(
+/* BUY NOW */
+
+function openOrder(
+id,
+name,
+price
+){
+
+const phone =
+"966550171314";
+
+const message =
+encodeURIComponent(
 `🛒 MJH PRODUCTS ORDER
 
 Product ID: ${id}
+
 Product Name: ${name}
+
 Price: ${price}
 
-Please confirm availability and delivery details.
+Please confirm availability.
 
 Thank you.`
-  );
+);
 
-  const whatsappURL =
-    `https://wa.me/${phone}?text=${message}`;
+window.open(
+`https://wa.me/${phone}?text=${message}`,
+"_blank"
+);
 
-  const paymentInfo =
-`💳 PAYMENT OPTIONS
-
-bKash: 01XXXXXXXXX
-
-Nagad: 01XXXXXXXXX
-
-Rocket: 01XXXXXXXXX
-
-Bank Transfer:
-MJH Products Co. Ltd
-
-WhatsApp Order:
-+966550171314
-
-Click OK to continue.`;
-
-  alert(paymentInfo);
-
-  window.open(
-    whatsappURL,
-    "_blank"
-  );
 }

@@ -1,71 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Checkout - MJH Products</title>
-  <link rel="stylesheet" href="../assets/css/theme.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MJH Checkout</title>
 
+<link rel="stylesheet" href="../assets/css/theme.css">
+
+<style>
+body{
+font-family:Arial,sans-serif;
+padding:20px;
+max-width:700px;
+margin:auto;
+}
+
+input,select{
+width:100%;
+padding:12px;
+margin:8px 0;
+box-sizing:border-box;
+}
+
+button{
+width:100%;
+padding:12px;
+cursor:pointer;
+}
+
+.order-box{
+border:1px solid #ddd;
+padding:15px;
+margin-bottom:20px;
+border-radius:8px;
+}
+</style>
+
+</head>
 <body>
 
-<h2 style="text-align:center;">Checkout</h2>
+<h1>🛒 Checkout</h1>
 
-<div style="max-width:500px;margin:auto;padding:20px;">
+<div class="order-box">
 
-  <input id="name" placeholder="Your Name" style="width:100%;padding:10px;margin:5px;">
-  <input id="phone" placeholder="Phone Number" style="width:100%;padding:10px;margin:5px;">
-  <input id="address" placeholder="Address" style="width:100%;padding:10px;margin:5px;">
+<h3>Order Summary</h3>
 
-  <select id="payment" style="width:100%;padding:10px;margin:5px;">
-    <option>bKash</option>
-    <option>Nagad</option>
-    <option>Rocket</option>
-    <option>Bank Transfer</option>
-  </select>
+<div id="summary"></div>
 
-  <button onclick="placeOrder()" style="width:100%;padding:10px;">
-    Place Order
-  </button>
+<p>
+<strong>Total Items:</strong>
+<span id="totalItems">0</span>
+</p>
 
 </div>
 
+<input
+type="text"
+id="name"
+placeholder="Your Name"
+required
+>
+
+<input
+type="text"
+id="phone"
+placeholder="Phone Number"
+required
+>
+
+<input
+type="text"
+id="address"
+placeholder="Delivery Address"
+required
+>
+
+<select id="payment">
+
+<option>bKash</option>
+<option>Nagad</option>
+<option>Rocket</option>
+<option>Bank Transfer</option>
+
+</select>
+
+<button onclick="placeOrder()">
+Place Order
+</button>
+
 <script>
-function placeOrder() {
 
-  let cart = JSON.parse(localStorage.getItem("mjh_cart")) || [];
+let cart =
+JSON.parse(
+localStorage.getItem("mjh_cart")
+) || [];
 
-  if (cart.length === 0) {
-    alert("Cart is empty!");
-    return;
-  }
+function renderSummary(){
 
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let address = document.getElementById("address").value;
-  let payment = document.getElementById("payment").value;
+let html="";
+let total=0;
 
-  let items = cart.map(i => i.name + " - " + i.price).join("\n");
+cart.forEach(item=>{
 
-  let message =
-`🛒 MJH ORDER
+const qty =
+item.qty || 1;
 
-Name: ${name}
-Phone: ${phone}
-Address: ${address}
-Payment: ${payment}
+total += qty;
 
-Items:
-${items}
+html += `
+<p>
+${item.name}
+<br>
+Qty: ${qty}
+<br>
+Price: ${item.price}
+</p>
+<hr>
 `;
 
-  let whatsapp = "https://wa.me/966550171314?text=" + encodeURIComponent(message);
+});
 
-  window.open(whatsapp, "_blank");
+document.getElementById(
+"summary"
+).innerHTML = html;
 
-  localStorage.removeItem("mjh_cart");
+document.getElementById(
+"totalItems"
+).innerText = total;
 
-  alert("Order sent!");
 }
+
+function placeOrder(){
+
+if(cart.length===0){
+
+alert("Cart is empty");
+
+return;
+
+}
+
+const name =
+document.getElementById(
+"name"
+).value;
+
+const phone =
+document.getElementById(
+"phone"
+).value;
+
+const address =
+document.getElementById(
+"address"
+).value;
+
+const payment =
+document.getElementById(
+"payment"
+).value;
+
+if(
+!name ||
+!phone ||
+!address
+){
+
+alert(
+"Please fill all fields"
+);
+
+return;
+
+}
+
+let items="";
+
+cart.forEach(item=>{
+
+items +=
+item.name +
+" | Qty: " +
+(item.qty || 1) +
+" | Price: " +
+item.price +
+"\n";
+
+});
+
+const message =
+`🛒 MJH PRODUCTS ORDER
+
+Name: ${name}
+
+Phone: ${phone}
+
+Address: ${address}
+
+Payment: ${payment}
+
+--------------------
+
+${items}
+
+--------------------
+
+Total Items: ${
+cart.reduce(
+(a,b)=>
+a+(b.qty||1),
+0
+)
+}
+`;
+
+window.open(
+"https://wa.me/966550171314?text=" +
+encodeURIComponent(message),
+"_blank"
+);
+
+localStorage.removeItem(
+"mjh_cart"
+);
+
+alert(
+"Order Sent Successfully"
+);
+
+}
+
+renderSummary();
+
 </script>
 
 </body>
