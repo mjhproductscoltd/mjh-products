@@ -149,12 +149,12 @@ body {
 
 /* Hamburger Menu */
 .menu-btn{
-font-size:30px;
+font-size:22px;
 cursor:pointer;
 padding:10px 15px;
 display:inline-block;
 position:fixed;
-top:120px;
+top:90px;
 left:10px;
 z-index:9998;
 background:#fff;
@@ -189,7 +189,7 @@ background:#222;
 
 .side-menu .closebtn{
 position:absolute;
-top:120px;
+top:90px;
 right:20px;
 font-size:35px;
 }
@@ -197,13 +197,13 @@ font-size:35px;
 /* Hamburger Menu */
 .menu-btn{
 position:fixed;
-top:120px;
+top:90px;
 left:10px;
 z-index:9999;
-font-size:30px;
+font-size:22px;
 cursor:pointer;
 background:#fff;
-padding:8px 12px;
+padding:6px 10px;
 border-radius:6px;
 box-shadow:0 2px 8px rgba(0,0,0,.2);
 }
@@ -235,7 +235,7 @@ background:#222;
 
 .side-menu .closebtn{
 position:absolute;
-top:120px;
+top:90px;
 right:20px;
 font-size:35px;
 }
