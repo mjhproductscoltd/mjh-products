@@ -3,15 +3,18 @@ fetch('data/products.json')
   .then(data => {
 
     const container = document.getElementById('productGrid');
+
     if (!container) return;
 
     if (!data.products || data.products.length === 0) {
+
       container.innerHTML = `
         <div class="card">
           <h3>No Products Available</h3>
           <p>Products will be added soon.</p>
         </div>
       `;
+
       return;
     }
 
@@ -29,12 +32,28 @@ fetch('data/products.json')
 
         <h3>${product.name}</h3>
 
-        <p><strong>Category:</strong> ${product.category}</p>
+        <p>
+          <strong>Category:</strong>
+          ${product.category}
+        </p>
 
-        <p><strong>Price:</strong> ${product.price}</p>
+        <p>
+          <strong>Price:</strong>
+          ${product.price}
+        </p>
 
-        <button onclick="openOrder('${product.id}', '${product.name}', '${product.price}')">
-          Order Now
+        <button
+          onclick="addToCart('${product.id}','${product.name}','${product.price}')"
+          class="cart-btn"
+        >
+          Add To Cart
+        </button>
+
+        <button
+          onclick="openOrder('${product.id}','${product.name}','${product.price}')"
+          class="order-btn"
+        >
+          Buy Now
         </button>
       `;
 
@@ -42,28 +61,58 @@ fetch('data/products.json')
 
     });
 
-    console.log(data.products.length + " products loaded successfully.");
+    console.log(
+      data.products.length +
+      " products loaded successfully."
+    );
 
   })
   .catch(error => {
 
     console.error(error);
 
-    const container = document.getElementById('productGrid');
+    const container =
+      document.getElementById('productGrid');
 
     if (container) {
+
       container.innerHTML = `
         <div class="card">
           <h3>Loading Error</h3>
           <p>Unable to load product data.</p>
         </div>
       `;
+
     }
 
   });
 
 /* =========================
-   ORDER SYSTEM (FINAL)
+   CART SYSTEM
+========================= */
+
+let cart =
+  JSON.parse(localStorage.getItem('mjh_cart'))
+  || [];
+
+function addToCart(id, name, price) {
+
+  cart.push({
+    id,
+    name,
+    price
+  });
+
+  localStorage.setItem(
+    'mjh_cart',
+    JSON.stringify(cart)
+  );
+
+  alert(name + ' added to cart.');
+}
+
+/* =========================
+   ORDER SYSTEM
 ========================= */
 
 function openOrder(id, name, price) {
@@ -82,20 +131,30 @@ Please confirm availability and delivery details.
 Thank you.`
   );
 
-  const whatsappURL = `https://wa.me/${phone}?text=${message}`;
+  const whatsappURL =
+    `https://wa.me/${phone}?text=${message}`;
 
-  const paymentInfo = `
-💳 PAYMENT OPTIONS:
+  const paymentInfo =
+`💳 PAYMENT OPTIONS
 
-bKash: 01XXXXXXXXX  
-Nagad: 01XXXXXXXXX  
-Rocket: 01XXXXXXXXX  
-Bank: MJH Products Co. Ltd
+bKash: 01XXXXXXXXX
 
-Click OK to continue WhatsApp order.
-`;
+Nagad: 01XXXXXXXXX
+
+Rocket: 01XXXXXXXXX
+
+Bank Transfer:
+MJH Products Co. Ltd
+
+WhatsApp Order:
++966550171314
+
+Click OK to continue.`;
 
   alert(paymentInfo);
 
-  window.open(whatsappURL, "_blank");
+  window.open(
+    whatsappURL,
+    "_blank"
+  );
 }
