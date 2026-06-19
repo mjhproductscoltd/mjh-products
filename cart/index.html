@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MJH Products | Shopping Cart</title>
+
+<link rel="stylesheet" href="../assets/css/theme.css">
+
+<style>
+
+.cart-container{
+    max-width:1200px;
+    margin:auto;
+    padding:30px;
+}
+
+.cart-header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.cart-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.cart-item{
+    background:#fff;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.cart-item h3{
+    margin-top:0;
+}
+
+.cart-summary{
+    margin-top:40px;
+    text-align:center;
+}
+
+.action-btn{
+    padding:12px 20px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    margin:5px;
+}
+
+.checkout-btn{
+    background:#16a34a;
+    color:white;
+}
+
+.clear-btn{
+    background:#dc2626;
+    color:white;
+}
+
+.back-btn{
+    background:#0f172a;
+    color:white;
+    text-decoration:none;
+    display:inline-block;
+}
+
+.empty{
+    text-align:center;
+    padding:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="cart-container">
+
+<div class="cart-header">
+<h1>🛒 Shopping Cart</h1>
+<p>MJH Products Co. Ltd</p>
+</div>
+
+<div id="cartItems" class="cart-grid"></div>
+
+<div class="cart-summary">
+
+<h2 id="totalItems">Total Items: 0</h2>
+
+<button
+class="action-btn clear-btn"
+onclick="clearCart()">
+Clear Cart
+</button>
+
+<a
+href="../order/index.html"
+class="action-btn checkout-btn">
+Proceed To Checkout
+</a>
+
+<a
+href="../products/index.html"
+class="action-btn back-btn">
+Continue Shopping
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+let cart =
+JSON.parse(
+localStorage.getItem("mjh_cart")
+) || [];
+
+const cartItems =
+document.getElementById("cartItems");
+
+const totalItems =
+document.getElementById("totalItems");
+
+function renderCart(){
+
+cartItems.innerHTML = "";
+
+if(cart.length === 0){
+
+cartItems.innerHTML = `
+<div class="empty">
+<h2>Cart is Empty</h2>
+<p>Add products from Products page.</p>
+</div>
+`;
+
+totalItems.innerHTML =
+"Total Items: 0";
+
+return;
+
+}
+
+cart.forEach((item,index)=>{
+
+const div =
+document.createElement("div");
+
+div.className =
+"cart-item";
+
+div.innerHTML = `
+<h3>${item.name}</h3>
+
+<p>
+<strong>Product ID:</strong>
+${item.id}
+</p>
+
+<p>
+<strong>Price:</strong>
+${item.price}
+</p>
+
+<button
+class="action-btn clear-btn"
+onclick="removeItem(${index})">
+Remove
+</button>
+`;
+
+cartItems.appendChild(div);
+
+});
+
+totalItems.innerHTML =
+"Total Items: " + cart.length;
+
+}
+
+function removeItem(index){
+
+cart.splice(index,1);
+
+localStorage.setItem(
+"mjh_cart",
+JSON.stringify(cart)
+);
+
+renderCart();
+
+}
+
+function clearCart(){
+
+if(
+confirm("Clear all cart items?")
+){
+
+localStorage.removeItem(
+"mjh_cart"
+);
+
+cart = [];
+
+renderCart();
+
+}
+
+}
+
+renderCart();
+
+</script>
+
+</body>
+</html>
