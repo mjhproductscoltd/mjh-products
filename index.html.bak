@@ -14,21 +14,6 @@ cat > products/index.html <<'EOF'
 </head>
 
 <body>
-<span class="menu-btn" onclick="openMenu()">☰</span>
-<div id="sideMenu" class="side-menu">
-<a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
-<a href="index.html">Home</a>
-<a href="about/index.html">About MJH</a>
-<a href="company/mission.html">Mission & Vision</a>
-<a href="company/values.html">Corporate Values</a>
-<a href="newsroom/index.html">News & Information</a>
-<a href="society/index.html">MJH In Society</a>
-<a href="global/index.html">Global Reach</a>
-<a href="products/index.html">Products</a>
-<a href="cart/index.html">Cart</a>
-<a href="order/index.html">Online Order</a>
-<a href="contact/index.html">Contact Us</a>
-</div>
 
 <div class="topbar">
   <div>📧 mjhproductsco.ltd@gmail.com</div>
@@ -53,7 +38,6 @@ cat > products/index.html <<'EOF'
 
 <script src="../assets/js/products.js"></script>
 
-<script src="assets/js/menu.js"></script>
 </body>
 </html>
 EOF
