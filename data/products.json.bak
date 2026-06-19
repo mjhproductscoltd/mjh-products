@@ -4,126 +4,126 @@
       "id": "spice-001",
       "name": "Dry Red Chilli",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/dry-red-chilli.png"
     },
     {
       "id": "spice-002",
       "name": "Turmeric",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/turmeric.png"
     },
     {
       "id": "spice-003",
       "name": "Coriander",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/coriander.png"
     },
     {
       "id": "spice-004",
       "name": "Cumin",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/cumin.png"
     },
     {
       "id": "spice-005",
       "name": "Cardamom",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/cardamom.png"
     },
     {
       "id": "spice-006",
       "name": "Cinnamon",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/cinnamon.png"
     },
     {
       "id": "spice-007",
       "name": "Black Pepper",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/black-pepper.png"
     },
     {
       "id": "spice-008",
       "name": "Cloves",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/cloves.png"
     },
     {
       "id": "spice-009",
       "name": "Garam Masala",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/garam-masala.png"
     },
     {
       "id": "spice-010",
       "name": "Bay Leaf",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/bay-leaf.png"
     },
     {
       "id": "spice-011",
       "name": "Nutmeg",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/nutmeg.png"
     },
     {
       "id": "spice-012",
       "name": "Star Anise",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/star-anise.png"
     },
     {
       "id": "spice-013",
       "name": "Mustard Seed",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/mustard-seed.png"
     },
     {
       "id": "spice-014",
       "name": "Fennel",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/fennel.png"
     },
     {
       "id": "spice-015",
       "name": "Nigella Seed",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/nigella-seed.png"
     },
     {
       "id": "spice-016",
       "name": "Saffron",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/saffron.png"
     },
     {
       "id": "spice-017",
       "name": "Garlic",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/garlic.png"
     },
     {
       "id": "spice-018",
       "name": "Fenugreek",
       "category": "Spices",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/fenugreek.png"
     },
 
@@ -131,49 +131,49 @@
       "id": "tea-001",
       "name": "Black Tea",
       "category": "Tea",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/black-tea.png"
     },
     {
       "id": "tea-002",
       "name": "Green Tea",
       "category": "Tea",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/green-tea.png"
     },
     {
       "id": "tea-003",
       "name": "White Tea",
       "category": "Tea",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/white-tea.png"
     },
     {
       "id": "tea-004",
       "name": "Oolong Tea",
       "category": "Tea",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/oolong-tea.png"
     },
     {
       "id": "tea-005",
       "name": "Herbal Tea",
       "category": "Tea",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/herbal-tea.png"
     },
     {
       "id": "tea-006",
       "name": "Rooibos Tea",
       "category": "Tea",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/rooibos-tea.png"
     },
     {
       "id": "tea-007",
       "name": "Darjeeling Tea",
       "category": "Tea",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/darjeeling-tea.png"
     },
 
@@ -181,7 +181,7 @@
       "id": "oil-001",
       "name": "Mustard Oil",
       "category": "Oil",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/mustard-oil.png"
     },
 
@@ -189,7 +189,7 @@
       "id": "footwear-001",
       "name": "Rubber Sandals",
       "category": "Footwear",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/rubber-sandals.png"
     },
 
@@ -197,7 +197,7 @@
       "id": "stationery-001",
       "name": "Pens",
       "category": "Stationery",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/pens.png"
     },
 
@@ -205,35 +205,35 @@
       "id": "future-001",
       "name": "Biscuit & Bakery",
       "category": "Future Products",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/biscuit-bakery.png"
     },
     {
       "id": "future-002",
       "name": "Dairy",
       "category": "Future Products",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/dairy.png"
     },
     {
       "id": "future-003",
       "name": "Snacks",
       "category": "Future Products",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/snacks.png"
     },
     {
       "id": "future-004",
       "name": "Sugar Confectionery",
       "category": "Future Products",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/sugar-confectionery.png"
     },
     {
       "id": "future-005",
       "name": "Beverages",
       "category": "Future Products",
-      "price": "250 BDT",
+      "price": "Coming Soon",
       "image": "assets/images/products/beverages.png"
     }
   ]
