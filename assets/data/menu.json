@@ -1,0 +1,14 @@
+{
+  "menu":[
+    {"title":"Home","link":"/"},
+    {"title":"About MJH","link":"/about/"},
+    {"title":"Mission & Vision","link":"/mission-vision/"},
+    {"title":"Corporate Values","link":"/corporate-values/"},
+    {"title":"News & Information","link":"/newsroom/"},
+    {"title":"MJH In Society","link":"/society/"},
+    {"title":"Global Reach","link":"/global/"},
+    {"title":"Products","link":"/products/"},
+    {"title":"Online Order","link":"/order/"},
+    {"title":"Contact Us","link":"/contact/"}
+  ]
+}
