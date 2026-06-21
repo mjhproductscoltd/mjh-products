@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | MJH Products Co. Ltd</title>
+<link rel="stylesheet" href="../assets/css/theme.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div>📧 mjhproductsco.ltd@gmail.com</div>
+  <div>📞 +880 / +966 Contact</div>
+</div>
+
+<header class="header">
+  <div class="logo">MJH PRODUCTS</div>
+
+  <nav class="nav">
+    <a href="../index.html">Home</a>
+    <a href="../about/index.html">About</a>
+    <a href="../cart/index.html">Cart</a>
+    <a href="../contact/index.html">Contact</a>
+  </nav>
+</header>
+
+<section class="section">
+  <h1>Our Products</h1>
+<br>
+<input id="productSearch" type="text" placeholder="Search products..." style="width:100%;padding:12px;margin-bottom:10px;">
+<br><br>
+<select id="categoryFilter" style="width:100%;padding:12px;">
+<option value="all">All Categories</option>
+<option value="Spices">Spices</option>
+<option value="Tea">Tea</option>
+<option value="Oil">Oil</option>
+<option value="Footwear">Footwear</option>
+<option value="Stationery">Stationery</option>
+<option value="Future Products">Future Products</option>
+</select>
+<br><br>
+  <div id="productGrid" class="grid"></div>
+</section>
+
+<script src="../assets/js/products.js"></script>
+<script src="../assets/js/product-filter.js"></script>
+
+</body>
+</html>
