@@ -154,7 +154,7 @@ cursor:pointer;
 padding:5px 8px;
 display:inline-block;
 position:fixed;
-top:120px;
+top:95px;
 left:10px;
 z-index:9998;
 background:#fff;
@@ -189,7 +189,7 @@ background:#222;
 
 .side-menu .closebtn{
 position:absolute;
-top:120px;
+top:95px;
 right:20px;
 font-size:35px;
 }
@@ -197,7 +197,7 @@ font-size:35px;
 /* Hamburger Menu */
 .menu-btn{
 position:fixed;
-top:120px;
+top:95px;
 left:10px;
 z-index:9999;
 font-size:18px;
@@ -235,7 +235,7 @@ background:#222;
 
 .side-menu .closebtn{
 position:absolute;
-top:120px;
+top:95px;
 right:20px;
 font-size:35px;
 }
