@@ -5,236 +5,917 @@
       "name": "Dry Red Chilli",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/dry-red-chilli.png"
+      "image": "../assets/images/products/dry-red-chilli.png"
     },
     {
       "id": "spice-002",
       "name": "Turmeric",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/turmeric.png"
+      "image": "../assets/images/products/turmeric.png"
     },
     {
       "id": "spice-003",
       "name": "Coriander",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/coriander.png"
+      "image": "../assets/images/products/coriander.png"
     },
     {
       "id": "spice-004",
       "name": "Cumin",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/cumin.png"
+      "image": "../assets/images/products/cumin.png"
     },
     {
       "id": "spice-005",
       "name": "Cardamom",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/cardamom.png"
+      "image": "../assets/images/products/cardamom.png"
     },
     {
       "id": "spice-006",
       "name": "Cinnamon",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/cinnamon.png"
+      "image": "../assets/images/products/cinnamon.png"
     },
     {
       "id": "spice-007",
       "name": "Black Pepper",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/black-pepper.png"
+      "image": "../assets/images/products/black-pepper.png"
     },
     {
       "id": "spice-008",
       "name": "Cloves",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/cloves.png"
+      "image": "../assets/images/products/cloves.png"
     },
     {
       "id": "spice-009",
       "name": "Garam Masala",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/garam-masala.png"
+      "image": "../assets/images/products/garam-masala.png"
     },
     {
       "id": "spice-010",
       "name": "Bay Leaf",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/bay-leaf.png"
+      "image": "../assets/images/products/bay-leaf.png"
     },
     {
       "id": "spice-011",
       "name": "Nutmeg",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/nutmeg.png"
+      "image": "../assets/images/products/nutmeg.png"
     },
     {
       "id": "spice-012",
       "name": "Star Anise",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/star-anise.png"
+      "image": "../assets/images/products/star-anise.png"
     },
     {
       "id": "spice-013",
       "name": "Mustard Seed",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/mustard-seed.png"
+      "image": "../assets/images/products/mustard-seed.png"
     },
     {
       "id": "spice-014",
       "name": "Fennel",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/fennel.png"
+      "image": "../assets/images/products/fennel.png"
     },
     {
       "id": "spice-015",
       "name": "Nigella Seed",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/nigella-seed.png"
+      "image": "../assets/images/products/nigella-seed.png"
     },
     {
       "id": "spice-016",
       "name": "Saffron",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/saffron.png"
+      "image": "../assets/images/products/saffron.png"
     },
     {
       "id": "spice-017",
       "name": "Garlic",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/garlic.png"
+      "image": "../assets/images/products/garlic.png"
     },
     {
       "id": "spice-018",
       "name": "Fenugreek",
       "category": "Spices",
       "price": "250 BDT",
-      "image":"../assets/images/products/fenugreek.png"
+      "image": "../assets/images/products/fenugreek.png"
     },
-
     {
       "id": "tea-001",
       "name": "Black Tea",
       "category": "Tea",
       "price": "250 BDT",
-      "image":"../assets/images/products/black-tea.png"
+      "image": "../assets/images/products/black-tea.png"
     },
     {
       "id": "tea-002",
       "name": "Green Tea",
       "category": "Tea",
       "price": "250 BDT",
-      "image":"../assets/images/products/green-tea.png"
+      "image": "../assets/images/products/green-tea.png"
     },
     {
       "id": "tea-003",
       "name": "White Tea",
       "category": "Tea",
       "price": "250 BDT",
-      "image":"../assets/images/products/white-tea.png"
+      "image": "../assets/images/products/white-tea.png"
     },
     {
       "id": "tea-004",
       "name": "Oolong Tea",
       "category": "Tea",
       "price": "250 BDT",
-      "image":"../assets/images/products/oolong-tea.png"
+      "image": "../assets/images/products/oolong-tea.png"
     },
     {
       "id": "tea-005",
       "name": "Herbal Tea",
       "category": "Tea",
       "price": "250 BDT",
-      "image":"../assets/images/products/herbal-tea.png"
+      "image": "../assets/images/products/herbal-tea.png"
     },
     {
       "id": "tea-006",
       "name": "Rooibos Tea",
       "category": "Tea",
       "price": "250 BDT",
-      "image":"../assets/images/products/rooibos-tea.png"
+      "image": "../assets/images/products/rooibos-tea.png"
     },
     {
       "id": "tea-007",
       "name": "Darjeeling Tea",
       "category": "Tea",
       "price": "250 BDT",
-      "image":"../assets/images/products/darjeeling-tea.png"
+      "image": "../assets/images/products/darjeeling-tea.png"
     },
-
     {
       "id": "oil-001",
       "name": "Mustard Oil",
       "category": "Oil",
       "price": "250 BDT",
-      "image":"../assets/images/products/mustard-oil.png"
+      "image": "../assets/images/products/mustard-oil.png"
     },
-
     {
       "id": "footwear-001",
       "name": "Rubber Sandals",
       "category": "Footwear",
       "price": "250 BDT",
-      "image":"../assets/images/products/rubber-sandals.png"
+      "image": "../assets/images/products/rubber-sandals.png"
     },
-
     {
       "id": "stationery-001",
       "name": "Pens",
       "category": "Stationery",
       "price": "250 BDT",
-      "image":"../assets/images/products/pens.png"
+      "image": "../assets/images/products/pens.png"
     },
-
     {
       "id": "future-001",
       "name": "Biscuit & Bakery",
       "category": "Future Products",
       "price": "250 BDT",
-      "image":"../assets/images/products/biscuit-bakery.png"
+      "image": "../assets/images/products/biscuit-bakery.png"
     },
     {
       "id": "future-002",
       "name": "Dairy",
       "category": "Future Products",
       "price": "250 BDT",
-      "image":"../assets/images/products/dairy.png"
+      "image": "../assets/images/products/dairy.png"
     },
     {
       "id": "future-003",
       "name": "Snacks",
       "category": "Future Products",
       "price": "250 BDT",
-      "image":"../assets/images/products/snacks.png"
+      "image": "../assets/images/products/snacks.png"
     },
     {
       "id": "future-004",
       "name": "Sugar Confectionery",
       "category": "Future Products",
       "price": "250 BDT",
-      "image":"../assets/images/products/sugar-confectionery.png"
+      "image": "../assets/images/products/sugar-confectionery.png"
     },
     {
       "id": "future-005",
       "name": "Beverages",
       "category": "Future Products",
       "price": "250 BDT",
-      "image":"../assets/images/products/beverages.png"
+      "image": "../assets/images/products/beverages.png"
+    },
+    {
+      "id": "spice-1001",
+      "name": "Barbeque Masala 100gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/barbeque-masala-100gm.png"
+    },
+    {
+      "id": "spice-1002",
+      "name": "Barbeque Masala 40gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/barbeque-masala-40gm.png"
+    },
+    {
+      "id": "spice-1003",
+      "name": "Barbeque Masala 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/barbeque-masala-50gm.png"
+    },
+    {
+      "id": "spice-1004",
+      "name": "Biryani Masala 1000gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/biryani-masala-1000gm.png"
+    },
+    {
+      "id": "spice-1005",
+      "name": "Biryani Masala 100gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/biryani-masala-100gm.png"
+    },
+    {
+      "id": "spice-1006",
+      "name": "Biryani Masala 250gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/biryani-masala-250gm.png"
+    },
+    {
+      "id": "spice-1007",
+      "name": "Biryani Masala 30gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/biryani-masala-30gm.png"
+    },
+    {
+      "id": "spice-1008",
+      "name": "Biryani Masala 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/biryani-masala-50gm.png"
+    },
+    {
+      "id": "spice-1009",
+      "name": "Chat Masala 10gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chat-masala-10gm.png"
+    },
+    {
+      "id": "spice-1010",
+      "name": "Chat Masala 15gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chat-masala-15gm.png"
+    },
+    {
+      "id": "spice-1011",
+      "name": "Chat Masala 20gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chat-masala-20gm.png"
+    },
+    {
+      "id": "spice-1012",
+      "name": "Chat Masala 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chat-masala-50gm.png"
+    },
+    {
+      "id": "spice-1013",
+      "name": "Chat Masala 5gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chat-masala-5gm.png"
+    },
+    {
+      "id": "spice-1014",
+      "name": "Chicken Curry Masala 30gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chicken-curry-masala-30gm.png"
+    },
+    {
+      "id": "spice-1015",
+      "name": "Chicken Curry Masala 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chicken-curry-masala-50gm.png"
+    },
+    {
+      "id": "spice-1016",
+      "name": "Chicken Jalfrezi Masala 100gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chicken-jalfrezi-masala-100gm.png"
+    },
+    {
+      "id": "spice-1017",
+      "name": "Chicken Jalfrezi Masala 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chicken-jalfrezi-masala-50gm.png"
+    },
+    {
+      "id": "spice-1018",
+      "name": "Chicken Masala 100gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chicken-masala-100gm.png"
+    },
+    {
+      "id": "spice-1019",
+      "name": "Chicken Masala 15gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chicken-masala-15gm.png"
+    },
+    {
+      "id": "spice-1020",
+      "name": "Chicken Masala 20gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chicken-masala-20gm.png"
+    },
+    {
+      "id": "spice-1021",
+      "name": "Chicken Masala 250gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chicken-masala-250gm.png"
+    },
+    {
+      "id": "spice-1022",
+      "name": "Chicken Masala 30gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chicken-masala-30gm.png"
+    },
+    {
+      "id": "spice-1023",
+      "name": "Chicken Masala 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chicken-masala-50gm.png"
+    },
+    {
+      "id": "spice-1024",
+      "name": "Chili Flakes 10gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chili-flakes-10gm.png"
+    },
+    {
+      "id": "spice-1025",
+      "name": "Chili Flakes 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chili-flakes-50gm.png"
+    },
+    {
+      "id": "spice-1026",
+      "name": "Chili Flakes 5gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/chili-flakes-5gm.png"
+    },
+    {
+      "id": "spice-1027",
+      "name": "Coriander Powder 1000gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/coriander-powder-1000gm.png"
+    },
+    {
+      "id": "spice-1028",
+      "name": "Coriander Powder 100gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/coriander-powder-100gm.png"
+    },
+    {
+      "id": "spice-1029",
+      "name": "Coriander Powder 250gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/coriander-powder-250gm.png"
+    },
+    {
+      "id": "spice-1030",
+      "name": "Coriander Powder 30gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/coriander-powder-30gm.png"
+    },
+    {
+      "id": "spice-1031",
+      "name": "Coriander Powder 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/coriander-powder-50gm.png"
+    },
+    {
+      "id": "spice-1032",
+      "name": "Cumin Powder 1000gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/cumin-powder-1000gm.png"
+    },
+    {
+      "id": "spice-1033",
+      "name": "Cumin Powder 100gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/cumin-powder-100gm.png"
+    },
+    {
+      "id": "spice-1034",
+      "name": "Cumin Powder 250gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/cumin-powder-250gm.png"
+    },
+    {
+      "id": "spice-1035",
+      "name": "Cumin Powder 30gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/cumin-powder-30gm.png"
+    },
+    {
+      "id": "spice-1036",
+      "name": "Cumin Powder 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/cumin-powder-50gm.png"
+    },
+    {
+      "id": "spice-1037",
+      "name": "Garam Masala 1000gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/garam-masala-1000gm.png"
+    },
+    {
+      "id": "spice-1038",
+      "name": "Garam Masala 100gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/garam-masala-100gm.png"
+    },
+    {
+      "id": "spice-1039",
+      "name": "Garam Masala 10gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/garam-masala-10gm.png"
+    },
+    {
+      "id": "spice-1040",
+      "name": "Garam Masala 15gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/garam-masala-15gm.png"
+    },
+    {
+      "id": "spice-1041",
+      "name": "Garam Masala 20gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/garam-masala-20gm.png"
+    },
+    {
+      "id": "spice-1042",
+      "name": "Garam Masala 250gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/garam-masala-250gm.png"
+    },
+    {
+      "id": "spice-1043",
+      "name": "Garam Masala 30gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/garam-masala-30gm.png"
+    },
+    {
+      "id": "spice-1044",
+      "name": "Garam Masala 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/garam-masala-50gm.png"
+    },
+    {
+      "id": "spice-1045",
+      "name": "Garam Masala 5gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/garam-masala-5gm.png"
+    },
+    {
+      "id": "spice-1046",
+      "name": "Haleem Mix 100gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/haleem-mix-100gm.png"
+    },
+    {
+      "id": "spice-1047",
+      "name": "Haleem Mix 250gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/haleem-mix-250gm.png"
+    },
+    {
+      "id": "spice-1048",
+      "name": "Haleem Mix 500gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/haleem-mix-500gm.png"
+    },
+    {
+      "id": "spice-1049",
+      "name": "Kabsa Mix 100gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/kabsa-mix-100gm.png"
+    },
+    {
+      "id": "spice-1050",
+      "name": "Kabsa Mix 250gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/kabsa-mix-250gm.png"
+    },
+    {
+      "id": "spice-1051",
+      "name": "Kabsa Mix 500gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/kabsa-mix-500gm.png"
+    },
+    {
+      "id": "spice-1052",
+      "name": "Karahi Gosht Masala 100gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/karahi-gosht-masala-100gm.png"
+    },
+    {
+      "id": "spice-1053",
+      "name": "Karahi Gosht Masala 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/karahi-gosht-masala-50gm.png"
+    },
+    {
+      "id": "spice-1054",
+      "name": "Karahi Masala 100gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/karahi-masala-100gm.png"
+    },
+    {
+      "id": "spice-1055",
+      "name": "Karahi Masala 30gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/karahi-masala-30gm.png"
+    },
+    {
+      "id": "spice-1056",
+      "name": "Karahi Masala 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/karahi-masala-50gm.png"
+    },
+    {
+      "id": "spice-1057",
+      "name": "Mandhi Mix 100gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/mandhi-mix-100gm.png"
+    },
+    {
+      "id": "spice-1058",
+      "name": "Mandhi Mix 250gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/mandhi-mix-250gm.png"
+    },
+    {
+      "id": "spice-1059",
+      "name": "Mandhi Mix 500gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/mandhi-mix-500gm.png"
+    },
+    {
+      "id": "spice-1060",
+      "name": "Meat Curry Masala 100gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/meat-curry-masala-100gm.png"
+    },
+    {
+      "id": "spice-1061",
+      "name": "Meat Curry Masala 250gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/meat-curry-masala-250gm.png"
+    },
+    {
+      "id": "spice-1062",
+      "name": "Meat Curry Masala 30gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/meat-curry-masala-30gm.png"
+    },
+    {
+      "id": "spice-1063",
+      "name": "Meat Curry Masala 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/meat-curry-masala-50gm.png"
+    },
+    {
+      "id": "spice-1064",
+      "name": "Nihari Masala 250gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/nihari-masala-250gm.png"
+    },
+    {
+      "id": "spice-1065",
+      "name": "Nihari Masala 30gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/nihari-masala-30gm.png"
+    },
+    {
+      "id": "spice-1066",
+      "name": "Nihari Masala 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/nihari-masala-50gm.png"
+    },
+    {
+      "id": "spice-1067",
+      "name": "Qorma Masala 100gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/qorma-masala-100gm.png"
+    },
+    {
+      "id": "spice-1068",
+      "name": "Qorma Masala 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/qorma-masala-50gm.png"
+    },
+    {
+      "id": "spice-1069",
+      "name": "Red Chili Powder 1000gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/red-chili-powder-1000gm.png"
+    },
+    {
+      "id": "spice-1070",
+      "name": "Red Chili Powder 100gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/red-chili-powder-100gm.png"
+    },
+    {
+      "id": "spice-1071",
+      "name": "Red Chili Powder 10gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/red-chili-powder-10gm.png"
+    },
+    {
+      "id": "spice-1072",
+      "name": "Red Chili Powder 15gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/red-chili-powder-15gm.png"
+    },
+    {
+      "id": "spice-1073",
+      "name": "Red Chili Powder 20gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/red-chili-powder-20gm.png"
+    },
+    {
+      "id": "spice-1074",
+      "name": "Red Chili Powder 250gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/red-chili-powder-250gm.png"
+    },
+    {
+      "id": "spice-1075",
+      "name": "Red Chili Powder 30gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/red-chili-powder-30gm.png"
+    },
+    {
+      "id": "spice-1076",
+      "name": "Red Chili Powder 500gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/red-chili-powder-500gm.png"
+    },
+    {
+      "id": "spice-1077",
+      "name": "Red Chili Powder 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/red-chili-powder-50gm.png"
+    },
+    {
+      "id": "spice-1078",
+      "name": "Red Chili Powder 5gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/red-chili-powder-5gm.png"
+    },
+    {
+      "id": "spice-1079",
+      "name": "Sabji Masala 15gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/sabji-masala-15gm.png"
+    },
+    {
+      "id": "spice-1080",
+      "name": "Sabji Masala 20gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/sabji-masala-20gm.png"
+    },
+    {
+      "id": "spice-1081",
+      "name": "Sabji Masala 30gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/sabji-masala-30gm.png"
+    },
+    {
+      "id": "spice-1082",
+      "name": "Sabji Masala 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/sabji-masala-50gm.png"
+    },
+    {
+      "id": "spice-1083",
+      "name": "Seekh Kabab Masala 100gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/seekh-kabab-masala-100gm.png"
+    },
+    {
+      "id": "spice-1084",
+      "name": "Seekh Kabab Masala 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/seekh-kabab-masala-50gm.png"
+    },
+    {
+      "id": "spice-1085",
+      "name": "Tandoori Masala 15gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/tandoori-masala-15gm.png"
+    },
+    {
+      "id": "spice-1086",
+      "name": "Tandoori Masala 20gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/tandoori-masala-20gm.png"
+    },
+    {
+      "id": "spice-1087",
+      "name": "Tandoori Masala 30gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/tandoori-masala-30gm.png"
+    },
+    {
+      "id": "spice-1088",
+      "name": "Tandoori Masala 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/tandoori-masala-50gm.png"
+    },
+    {
+      "id": "spice-1089",
+      "name": "Turmeric Powder 1000gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/turmeric-powder-1000gm.png"
+    },
+    {
+      "id": "spice-1090",
+      "name": "Turmeric Powder 100gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/turmeric-powder-100gm.png"
+    },
+    {
+      "id": "spice-1091",
+      "name": "Turmeric Powder 10gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/turmeric-powder-10gm.png"
+    },
+    {
+      "id": "spice-1092",
+      "name": "Turmeric Powder 15gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/turmeric-powder-15gm.png"
+    },
+    {
+      "id": "spice-1093",
+      "name": "Turmeric Powder 20gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/turmeric-powder-20gm.png"
+    },
+    {
+      "id": "spice-1094",
+      "name": "Turmeric Powder 250gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/turmeric-powder-250gm.png"
+    },
+    {
+      "id": "spice-1095",
+      "name": "Turmeric Powder 30gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/turmeric-powder-30gm.png"
+    },
+    {
+      "id": "spice-1096",
+      "name": "Turmeric Powder 500gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/turmeric-powder-500gm.png"
+    },
+    {
+      "id": "spice-1097",
+      "name": "Turmeric Powder 50gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/turmeric-powder-50gm.png"
+    },
+    {
+      "id": "spice-1098",
+      "name": "Turmeric Powder 5gm",
+      "category": "Spices",
+      "price": "Coming Soon",
+      "image": "../assets/images/products/turmeric-powder-5gm.png"
     }
   ]
 }
