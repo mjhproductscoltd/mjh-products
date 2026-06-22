@@ -282,3 +282,8 @@ body{
     max-width:100%;
     overflow-x:hidden !important;
 }
+
+.nav a{
+    color:#fff !important;
+}
+
