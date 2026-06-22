@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "জিরা গুঁড়া",
+    "price": 25,
+    "weight": "50g",
+    "image": "assets/images/jira.jpg",
+    "category": "মসলা"
+  },
+  {
+    "id": 2,
+    "name": "ধনিয়া গুঁড়া",
+    "price": 20,
+    "weight": "50g",
+    "image": "assets/images/dhonia.jpg",
+    "category": "মসলা"
+  }
+]
