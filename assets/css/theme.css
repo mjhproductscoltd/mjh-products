@@ -287,3 +287,29 @@ body{
     color:#fff !important;
 }
 
+
+/* Mobile Navigation Fix */
+@media (max-width: 768px) {
+
+  .header{
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .nav a{
+    color: #fff !important;
+    background: #b91c1c;
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin: 2px;
+  }
+}
+
